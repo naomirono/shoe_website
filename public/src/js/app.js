@@ -62,3 +62,25 @@ document.querySelectorAll('.featured-image-6').forEach(image_6 =>{
         document.querySelector('.big-image-6').src = src;
     });
 });
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDXTl-UevtVBMZvSTOmwGfWuG5sDIWVhcA",
+  authDomain: "shoe-website-neyo.firebaseapp.com",
+  projectId: "shoe-website-neyo",
+  storageBucket: "shoe-website-neyo.appspot.com",
+  messagingSenderId: "35781957175",
+  appId: "1:35781957175:web:60c3e37e69d2693cf551b2",
+  measurementId: "G-TF76R9SGSC"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);

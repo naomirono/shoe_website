@@ -133,6 +133,7 @@ header .icons a:hover{
 section{
     padding: 2rem 9%;
 }
+
 .home{
     padding: 0;
     position: relative;
@@ -143,10 +144,13 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url(../img/output-onlinepngtools.png);
+    /* background-image: url(../img/output-onlinepngtools.png);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    
+    
+   
 }
 .home .slide-container .slide{
     min-height: 100vh;
@@ -155,11 +159,17 @@ section{
     flex-wrap: wrap;
     gap: 1.5rem;
     padding: 0 9%;
-    padding-top: 9rem;
+    
+    background-color: #008CBA;
+    background-image: url(../img/output-onlinepngtools.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
 .home .slide-container .slide .content{
-    
+    /* background-color: #008CBA; */
+    padding-top: 9%;
     flex: 1 1 40rem;
     animation: slideContent .3s linear 1s backwards;
     
@@ -172,14 +182,17 @@ section{
 }
 .home .slide-container .slide .image{
     flex: 1 1 50rem;
+    padding-top: 10rem;
     padding-bottom: 10rem;
     position: relative;
     z-index: 0;
-    left: 70px;
+    left: 50px;
+    
  
 }
 .home .slide-container .slide .image .shoe{
     width: 80%;
+    
     
     animation: shoe .3s linear;
 }
@@ -203,7 +216,7 @@ section{
 .home .slide-container .slide .content p{
     font-size: 4rem;
     color: #585858;
-    padding: 30px 30px;
+    padding: 20px 20px;
     font-family: pyxidium quick;
    
 }
@@ -650,15 +663,43 @@ padding: 2rem 0 3rem;
     header .navbar.active{
         left: 0;
     }
-    /* .home .slide-container .slide .image .shoe{
+    .home .slide-container .slide .image{
         display: none;
-    } */
+    }
+    .home .slide-container .slide .content{
+        padding: 0;
+    }
+    
+    
     
     
 }
 
+@media only screen and (max-width: 1072px) {
+    .home .slide-container .slide .image{
+        display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 456px) {
+    
+    .home .slide-container .slide .content span{
+        font-size: 0.5rem;
 
-
+    }
+    .home .slide-container .slide .content h3{
+        font-size: 4rem;
+        
+        
+    }
+    .home .slide-container .slide .content p{
+        font-size: 2.5rem;
+        padding: 2%;
+       
+       
+    }
+    
+  }
 /* For large devices */
     /* @media screen and (min-width: 1024px){
         .image .shoe{
