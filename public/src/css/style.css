@@ -159,8 +159,6 @@ section{
     flex-wrap: wrap;
     gap: 1.5rem;
     padding: 0 9%;
-    
-    background-color: #008CBA;
     background-image: url(../img/output-onlinepngtools.png);
     background-position: center;
     background-size: cover;
